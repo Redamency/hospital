@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shu.hospital.mapper.OrderMapper">
+
+    <resultMap id="BaseResultMap" type="com.shu.hospital.domain.Order">
+            <id property="odrNo" column="odr_no" jdbcType="INTEGER"/>
+            <id property="subNo" column="sub_no" jdbcType="INTEGER"/>
+            <result property="patientId" column="patient_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        odr_no,sub_no,patient_id
+    </sql>
+</mapper>

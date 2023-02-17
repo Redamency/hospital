@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shu.hospital.mapper.ReportMapper">
+
+    <resultMap id="BaseResultMap" type="com.shu.hospital.domain.Report">
+            <id property="reportSubno" column="report_subno" jdbcType="INTEGER"/>
+            <result property="reportNo" column="report_no" jdbcType="INTEGER"/>
+            <result property="sbjtNo" column="sbjt_no" jdbcType="INTEGER"/>
+            <result property="value" column="value" jdbcType="VARCHAR"/>
+            <result property="note" column="note" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        report_subno,report_no,sbjt_no,
+        value,note
+    </sql>
+</mapper>
