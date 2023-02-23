@@ -6,7 +6,10 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 
@@ -14,6 +17,8 @@ import lombok.Data;
  */
 @TableName(value ="patient")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Patient implements Serializable {
     /**
      * 
@@ -25,6 +30,11 @@ public class Patient implements Serializable {
      * 
      */
     private String pname;
+
+    /**
+     *
+     */
+    private String password;
 
     /**
      * 

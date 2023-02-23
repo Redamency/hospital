@@ -7,7 +7,9 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 
 import com.github.jeffreyning.mybatisplus.anno.MppMultiId;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 
@@ -15,6 +17,8 @@ import lombok.Data;
  */
 @TableName(value ="order")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Order implements Serializable {
     /**
      * 

@@ -27,6 +27,11 @@ public class Employee implements Serializable {
     private String pname;
 
     /**
+     *
+     */
+    private String password;
+
+    /**
      * 
      */
     private Date birthday;

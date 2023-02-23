@@ -1,5 +1,6 @@
 package com.shu.hospital.service;
 
+import com.shu.hospital.constant.R;
 import com.shu.hospital.domain.Patient;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -10,4 +11,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface PatientService extends IService<Patient> {
 
+    R login(Patient patient);
+
+    R getPatientInfo(String token);
 }
